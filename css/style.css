@@ -9739,6 +9739,27 @@ textarea.form-control {
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
 
+  /* Counter Section Styles */
+.counter-section {
+  background-color: #fff;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.counter-box h3 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.counter-box p {
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #000;
+}
+
+
 @-webkit-keyframes loader-rotate {
   100% {
     -webkit-transform: rotate(360deg);
