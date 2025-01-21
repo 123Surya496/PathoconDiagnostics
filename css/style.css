@@ -9057,6 +9057,425 @@ textarea.form-control {
   opacity: 0;
   visibility: hidden; }
 
+/* about us start */
+/* Section Styling */
+.ftco-section {
+  padding: 60px 0;
+}
+
+.ftco-no-pt, .ftco-no-pb {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Container and Row */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+/* Content Section (Left Side) */
+.heading-section {
+  margin-bottom: 30px;
+}
+
+.subheading {
+  color: #05f531;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+ul li .fa-check-circle {
+  color: #05f531;
+  margin-right: 10px;
+}
+
+/* Image Styling */
+.square-img {
+  width: 100%;
+  height: 250px; /* Fixed height for square image */
+  object-fit: cover;
+  border-radius: 0; /* Ensure it's square */
+  margin-top: 30px;
+}
+
+/* Right Image Section */
+.img-video {
+  position: relative;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.icon-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.icon-video .fa-play {
+  color: #fff;
+  font-size: 30px;
+}
+
+/* Counter Section */
+.ftco-counter {
+  background-color: #f4f4f4;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.counter-wrap {
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.block-18 {
+  border: 1px solid #ddd;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.block-18 .icon {
+  margin-bottom: 15px;
+}
+
+.block-18 .icon .fa {
+  color: #05f531;
+}
+
+.block-18 .text .number {
+  font-size: 40px;
+  font-weight: bold;
+  color: #05f531;
+}
+
+.block-18 .text p {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+
+  .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+
+  .heading-section {
+      text-align: center;
+  }
+
+  .square-img {
+      height: 200px;
+      margin-top: 20px;
+  }
+}
+/* Chiropractic History Section */
+.ftco-section {
+  padding: 60px 0;
+  background-color: #f9f9f9; /* Light background color for contrast */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.col-md-8 {
+  max-width: 800px; /* Limit width for better readability */
+  padding: 20px;
+}
+
+h4 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555; /* Slightly lighter color for the text */
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .col-md-8 {
+      padding: 15px;
+  }
+
+  h4 {
+      font-size: 24px;
+  }
+
+  p {
+      font-size: 14px;
+  }
+}
+/* Testimonies Section */
+.testimony-section {
+  padding: 80px 0;
+  background-color: #212121; /* Dark background for the section */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heading-section-white {
+  color: #fff;
+}
+
+.subheading {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+
+.carousel-testimony {
+  display: flex;
+  justify-content: center;
+}
+
+.testimony-wrap {
+  background-color: #333;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  transition: transform 0.3s ease;
+}
+
+.testimony-wrap:hover {
+  transform: translateY(-10px); /* Hover effect to slightly lift the item */
+}
+
+.icon {
+  /* background-color: #f39c12; */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.text {
+  color: #fff;
+}
+
+.text p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.user-img {
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.pl-3 {
+  padding-left: 15px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.position {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel-testimony {
+      flex-direction: column;
+  }
+
+  .testimony-wrap {
+      margin-bottom: 20px;
+  }
+
+  h2 {
+      font-size: 24px;
+  }
+}
+/* Frequently Asked Questions Section */
+.frequently-asked-questions {
+  background-color: #f9f9f9; /* Light background */
+  padding: 60px 0;
+}
+
+.frequently-asked-questions .heading-section {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.frequently-asked-questions p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.card {
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.card-header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+}
+
+.card-header h2 {
+  margin-bottom: 0;
+}
+
+.card-header .btn-link {
+  font-size: 18px;
+  text-align: left;
+  color: #333;
+  font-weight: 600;
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.card-header .btn-link:hover {
+  background-color: #f1f1f1;
+}
+
+.card-body {
+  font-size: 16px;
+  color: #555;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.card-body p {
+  margin: 0;
+}
+
+/* Accordion Active Style */
+.accordion .collapse.show {
+  border-top: 1px solid #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .frequently-asked-questions .heading-section {
+      font-size: 28px;
+  }
+
+  .card-header .btn-link {
+      font-size: 16px;
+  }
+}
+
+/* about us end */
 .about-author .desc h3 {
   font-size: 24px; }
 
