@@ -3799,11 +3799,11 @@ input[type="button"].btn-block {
     margin-right: 0;
     margin-left: 0; }
   .card > .list-group:first-child .list-group-item:first-child {
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem; }
+    border-top-left-radius: 0.20rem;
+    border-top-right-radius: 0.20rem; }
   .card > .list-group:last-child .list-group-item:last-child {
-    border-bottom-right-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem; }
+    border-bottom-right-radius: 0.20rem;
+    border-bottom-left-radius: 0.20rem; }
 
 .card-body {
   -webkit-box-flex: 1;
@@ -3834,7 +3834,7 @@ input[type="button"].btn-block {
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
   .card-header:first-child {
-    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0; }
+    border-radius: calc(0.20rem - 1px) calc(0.20rem - 1px) 0 0; }
   .card-header + .list-group .list-group-item:first-child {
     border-top: 0; }
 
@@ -8668,6 +8668,7 @@ h1, h2, h3, h4, h5,
 
 .dept .img {
   height: 400px; }
+
 
 .services {
   display: block;
