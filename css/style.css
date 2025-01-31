@@ -8061,7 +8061,7 @@ h1, h2, h3, h4, h5,
   .wrap .top-wrap .text {
     padding-left: 15px;
     width: calc(100% - 44px); }
-    .wrap .top-wrap .text span {
+    .wrap .top-wrap .text  {
       display: block; }
       .wrap .top-wrap .text span:first-child {
         text-transform: uppercase;
