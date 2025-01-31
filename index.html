@@ -20,6 +20,43 @@
 
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/style.css">
+
+	<style>
+		.sticky {
+		  position: fixed;
+		  top: 0;
+		  width: 100%;
+		  z-index: 999;
+		}
+		.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.scroll-to-top:hover {
+    background-color: #0056b3;
+}
+	  </style>
+  
+	  <script>
+		window.addEventListener('scroll', function () {
+		  var navbar = document.getElementById('ftco-navbar');
+		  if (window.pageYOffset > 100) {
+			navbar.classList.add('sticky');
+		  } else {
+			navbar.classList.remove('sticky');
+		  }
+		});
+	  </script>
   </head>
   <body>
   	<!-- <div class="top py-1">
@@ -687,26 +724,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
   <script src="js/main.js"></script>
 
   <script>
-	// Counter Animation
-	const counters = document.querySelectorAll('.counter');
-	const speed = auto; // Adjust the speed as needed
- 
-	counters.forEach(counter => {
-	   const animate = () => {
-		  const target = +counter.getAttribute('data-target');
-		  const count = +counter.innerText;
- 
-		  const increment = target / speed;
- 
-		  if (count < target) {
-			 counter.innerText = Math.ceil(count + increment);
-			 setTimeout(animate, 20);
-		  } else {
-			 counter.innerText = target;
-		  }
-	   };
-	   animate();
-	});
- </script>
+	function scrollToTop() {
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	}
+  </script>
+  
+  <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
   </body>
 </html>
