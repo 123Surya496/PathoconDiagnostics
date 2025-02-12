@@ -9299,7 +9299,7 @@ ul li .fa-check-circle {
 }
 
 .counter-section {
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -9797,40 +9797,42 @@ h2 {
 
 .footer {
   overflow: hidden;
-  background: #252525; }
+  background: #252525;
+ }
   .footer .logo {
     font-size: 24px !important;
     font-weight: 700 !important;
     line-height: 1; }
-    .footer .logo a {
+  .footer .logo a {
       color: #fff; }
-      .footer .logo a span {
+  .footer .logo a span {
         color: #01d28e; }
   .footer .ftco-footer-widget h2 {
     font-weight: normal;
     color: #fff;
     margin-bottom: 40px;
     font-size: 20px;
-    font-weight: 600; }
+    font-weight: 600; 
+  }
   .footer .ftco-footer-widget ul li a {
     color: rgba(255, 255, 255, 0.7); }
-    .footer .ftco-footer-widget ul li a span {
+  .footer .ftco-footer-widget ul li a span {
       color: rgba(255, 255, 255, 0.7); }
-    .footer .ftco-footer-widget ul li a:hover {
+  .footer .ftco-footer-widget ul li a:hover {
       color: #01d28e; }
-      .footer .ftco-footer-widget ul li a:hover span {
+  .footer .ftco-footer-widget ul li a:hover span {
         color: #01d28e; }
   .footer .ftco-footer-widget .btn-primary {
     background: #fff !important;
     border: 2px solid #fff !important; }
-    .footer .ftco-footer-widget .btn-primary:hover {
+  .footer .ftco-footer-widget .btn-primary:hover {
       background: #fff;
       border: 2px solid #fff !important; }
   .footer p {
     color: rgba(255, 255, 255, 0.7); }
   .footer a {
     color: rgba(255, 255, 255, 0.7); }
-    .footer a:hover {
+  .footer a:hover {
       color: #fff; }
   .footer .opening-hours h4 {
     color: white;
@@ -9864,11 +9866,12 @@ h2 {
       color: #fff; }
 
 .footer-small-nav > li {
-  display: inline-block; }
-  .footer-small-nav > li a {
+    display: inline-block; }
+.footer-small-nav > li a {
     margin: 0 10px 10px 0; }
-    .footer-small-nav > li a:hover, .footer-small-nav > li a:focus {
-      color: #01d28e; }
+.footer-small-nav > li a:hover,
+.footer-small-nav > li a:focus {
+    color: #01d28e; }
 
 @-webkit-keyframes pulse {
   0% {
@@ -9943,17 +9946,17 @@ h2 {
 
 .testimony-section {
   position: relative; }
-  .testimony-section .owl-carousel {
+.testimony-section .owl-carousel {
     margin: 0; }
-  .testimony-section .owl-carousel .owl-stage-outer {
+.testimony-section .owl-carousel .owl-stage-outer {
     padding: 20px 0 2em 0;
     position: relative; }
-  .testimony-section .owl-nav {
+.testimony-section .owl-nav {
     position: absolute;
     top: 100%;
     width: 100%; }
-    .testimony-section .owl-nav .owl-prev,
-    .testimony-section .owl-nav .owl-next {
+.testimony-section .owl-nav .owl-prev,
+.testimony-section .owl-nav .owl-next {
       position: absolute;
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -9966,48 +9969,48 @@ h2 {
       -ms-transition: all 0.3s ease;
       transition: all 0.3s ease;
       opacity: 0; }
-      .testimony-section .owl-nav .owl-prev span:before,
-      .testimony-section .owl-nav .owl-next span:before {
-        font-size: 30px;
-        color: rgba(0, 0, 0, 0.5);
-        -moz-transition: all 0.3s ease;
-        -o-transition: all 0.3s ease;
-        -webkit-transition: all 0.3s ease;
-        -ms-transition: all 0.3s ease;
-        transition: all 0.3s ease; }
-      .testimony-section .owl-nav .owl-prev:hover span:before, .testimony-section .owl-nav .owl-prev:focus span:before,
-      .testimony-section .owl-nav .owl-next:hover span:before,
-      .testimony-section .owl-nav .owl-next:focus span:before {
+.testimony-section .owl-nav .owl-prev span:before,
+.testimony-section .owl-nav .owl-next span:before {
+      font-size: 30px;
+      color: rgba(0, 0, 0, 0.5);
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+.testimony-section .owl-nav .owl-prev:hover span:before, .testimony-section .owl-nav .owl-prev:focus span:before,
+.testimony-section .owl-nav .owl-next:hover span:before,
+.testimony-section .owl-nav .owl-next:focus span:before {
         color: #fff; }
-    .testimony-section .owl-nav .owl-prev {
+.testimony-section .owl-nav .owl-prev {
       left: 50%;
       margin-left: -80px; }
-    .testimony-section .owl-nav .owl-next {
+.testimony-section .owl-nav .owl-next {
       right: 50%;
       margin-right: -80px; }
-  .testimony-section:hover .owl-nav .owl-prev,
-  .testimony-section:hover .owl-nav .owl-next {
+.testimony-section:hover .owl-nav .owl-prev,
+.testimony-section:hover .owl-nav .owl-next {
     opacity: 1; }
-  .testimony-section:hover .owl-nav .owl-prev {
+.testimony-section:hover .owl-nav .owl-prev {
     left: 50%;
     margin-left: -80px; }
-  .testimony-section:hover .owl-nav .owl-next {
+.testimony-section:hover .owl-nav .owl-next {
     right: 50%;
     margin-right: -80px; }
-  .testimony-section .owl-dots {
+.testimony-section .owl-dots {
     text-align: center; }
-    .testimony-section .owl-dots .owl-dot {
-      width: 10px;
-      height: 10px;
-      margin: 5px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.2); }
-      .testimony-section .owl-dots .owl-dot:after {
-        border-color: rgba(255, 255, 255, 0.2); }
-      .testimony-section .owl-dots .owl-dot.active {
-        background: #6c5ce7; }
-        .testimony-section .owl-dots .owl-dot.active:after {
-          border-color: #6c5ce7; }
+.testimony-section .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2); }
+.testimony-section .owl-dots .owl-dot:after {
+    border-color: rgba(255, 255, 255, 0.2); }
+.testimony-section .owl-dots .owl-dot.active {
+    background: #6c5ce7; }
+.testimony-section .owl-dots .owl-dot.active:after {
+    border-color: #6c5ce7; }
 
 .testimony-wrap {
   display: block;
@@ -10016,32 +10019,32 @@ h2 {
   border: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 16px;
   color: rgba(255, 255, 255, 0.8); }
-  .testimony-wrap .icon {
-    position: absolute;
-    top: -20px;
-    left: 20px;
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    background: #01d28e; }
-    .testimony-wrap .icon span {
-      color: #fff; }
-  .testimony-wrap .user-img {
-    width: 70px;
-    height: 70px;
-    position: relative;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50%; }
+.testimony-wrap .icon {
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background: #01d28e; }
+.testimony-wrap .icon span {
+  color: #fff; }
+.testimony-wrap .user-img {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%; }
   .testimony-wrap .name {
-    font-weight: 500;
-    font-size: 20px;
-    margin-bottom: 0;
-    color: #fff; }
-  .testimony-wrap .position {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.7); }
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 0;
+  color: #fff; }
+.testimony-wrap .position {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7); }
 
 .image-popup {
   cursor: -webkit-zoom-in;
