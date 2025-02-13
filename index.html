@@ -23,7 +23,57 @@
     <link rel="stylesheet" href="css/style.css">
 
 	
-  
+  <style>
+	.slider-item {
+      position: relative;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+    }
+    .slider-item .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .heading-section h2 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #333;
+    }
+	@media (max-width: 768px) {
+      .slider-item {
+        height: 50vh;
+      }
+      .heading-section h2 {
+        font-size: 24px;
+      }
+	}
+	.counter-section {
+      background-color: #343a40;
+      color: white;
+    }
+    .counter-box {
+      padding: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      transition: 0.3s all ease;
+    }
+    .counter-box:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    .counter {
+      font-size: 48px;
+      font-weight: 700;
+    }
+    @media (max-width: 768px) {
+      .counter {
+        font-size: 36px;
+      }
+    }
+  </style>
 	  <script>
 		window.addEventListener('scroll', function () {
 		  var navbar = document.getElementById('ftco-navbar');
@@ -136,214 +186,101 @@
 	    </div>
 	  </nav>
     <!-- END nav -->
-    <div class="hero-wrap">
-	    <div class="home-slider owl-carousel">
-	      <div class="slider-item" style="background-image:url(images/bg/bg-9.png);">
-	      	<div class="overlay"></div>
-	        <div class="container">
-	          <div class="row no-gutters slider-text align-items-center justify-content-end">
-		          <div class="col-md-6 ftco-animate">
-		          	<div class="text w-100">
-			            <h1 class="mb-4">Best Diagnostic Centre in Rajajinagar,Bangalore</h1>
-			            <p style="color: rgb(255, 255, 255);">We are a TGS Certified, ISO 9001:2015 Diagnostic Center Delivering Trusted Care in Rajajinagar, Bangalore.</p>
-			            <!-- <p><a href="#" class="btn btn-primary">Book an appointment</a></p> -->
-		            </div>
-		          </div>
-		        </div>
-	        </div>
-	      </div>
-
-	      <div class="slider-item" style="background-image:url(images/bg/bg-8.png);">
-	      	<div class="overlay"></div>
-	        <div class="container">
-	          <div class="row no-gutters slider-text align-items-center justify-content-end">
-		          <div class="col-md-6 ftco-animate">
-		          	<div class="text w-100">
-			            <h1 class="mb-4">Best Pathology Labs in Rajajinagar,Bangalore</h1>
-			            <p style="color: rgb(255, 255, 255);">We are an NABL Certified Diagnostic Center Delivering Trusted and Accurate Results in Rajajinagar, Bangalore.</p>
-			            
-		            </div>
-		          </div>
-		        </div>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	  <!--About section-->
-	  <section class="ftco-section ftco-no-pt ftco-no-pb mb-3">
-    	<div class="container">
-    		<div class="row d-flex no-gutters">
-    			<div class="col-md-6 d-flex order-md-last">
-    				<div class="img img-video d-flex align-self-stretch align-items-center justify-content-center mb-8 mb-sm-0" style="background-image:url(images/);">
-    					<img src="images/logo/NABL.png" alt="Image" style="width: 1000px; height: 500px;">
-						
-    					</a>
-    				</div>
-    			</div>
-    			<div class="col-md-6 pr-md-5 py-md-5">
-    				<div class="row justify-content-start py-5">
-		          <div class="col-md-12 heading-section ftco-animate">
-		          	<span class="subheading">Welcome to Pathocon Diagnostics</span>
-		            <h2 class="mb-4" style="color: black;">NABL, TGS Certified, ISO 9001:2015 Diagnostic Center.</h2>
-		            <p>Welcome to Pathocon Diagnostic Center, with over 24 years of expertise in providing comprehensive
-					   medical services. As an NABL, TGS Certified, and ISO 9001:2015 accredited facility, we are committed
-					   to offering accurate, reliable, and timely diagnostic solutions. Our wide range of services includes
-					   general medicine, cardiology, diabetology, endocrinology, pulmonology, nephrology, urology, orthopedics,
-					   psychiatry, physiotherapy, hematology, biochemistry, microbiology, serology, histopathology, cytology,
-					   clinical pathology, hormones & immunoassays, and advanced diagnostic imaging such as computerized radiography
-					   (X-ray), Doppler studies, ultrasound, echocardiography, and ECG & TMT. Trust us for all your healthcare diagnostic needs. 
-					</p>
-					<p><b>Specialized in AIDS Diagnostics and Care.</b></p>
-		          </div>
-		        </div>
-		        </div>
-	        </div>
-        </div>
-    	</div>
-    </section>
-	<section id="counter" class="counter-section py-5 bg-dark text-white mt-3">
-		<div class="container text-center">
-		   <h2 class="section-title text-white">Our Comprehensive Services</h2>
-		   <p class="mb-5" style="color: aliceblue;">At our diagnostic center, we offer a full spectrum of services to ensure your health and well-being:</p>
-		   <div class="row">
-			  <!-- Counter 1 -->
-			  <div class="col-lg-3 col-md-6 mb-4">
-				 <div class="counter-box">
-					<h3 class="counter" data-target="500">500</h3>
-					<p>Happy Clients</p>
-				 </div>
+	<div class="hero-wrap">
+		<div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+		  <div class="carousel-inner">
+			<div class="carousel-item active slider-item" style="background-image: url('images/bg/bg-9.png');">
+			  <div class="overlay"></div>
+			  <div class="container h-100">
+				<div class="row h-100 align-items-center justify-content-end">
+				  <div class="col-md-6 text-white">
+					<h1 class="mb-4" style="color: aliceblue;">Best Diagnostic Centre in Rajajinagar, Bangalore</h1>
+					<p style="color: aliceblue;">We are a TGS Certified, ISO 9001:2015 Diagnostic Center Delivering Trusted Care in Rajajinagar, Bangalore.</p>
+				  </div>
+				</div>
 			  </div>
-			  <!-- Counter 2 -->
-			  <div class="col-lg-3 col-md-6 mb-4">
-				 <div class="counter-box">
-					<h3 class="counter" data-target="13000">13000</h3>
-					<p>AIDS Tests Conducted</p>
-				 </div>
+			</div>
+			<div class="carousel-item slider-item" style="background-image: url('images/bg/bg-8.png');">
+			  <div class="overlay"></div>
+			  <div class="container h-100">
+				<div class="row h-100 align-items-center justify-content-end">
+				  <div class="col-md-6 text-white">
+					<h1 class="mb-4" style="color: aliceblue;">Best Pathology Labs in Rajajinagar, Bangalore</h1>
+					<p style="color: aliceblue;">We are an NABL Certified Diagnostic Center Delivering Trusted and Accurate Results in Rajajinagar, Bangalore.</p>
+				  </div>
+				</div>
 			  </div>
-			  <!-- Counter 3 -->
-			  <div class="col-lg-3 col-md-6 mb-4">
-				 <div class="counter-box">
-					<h3 class="counter" data-target="24">24</h3>
-					<p>Years of Experience</p>
-				 </div>
-			  </div>
-			  <!-- Counter 4 -->
-			  <div class="col-lg-3 col-md-6 mb-4">
-				 <div class="counter-box">
-					<h3 class="counter" data-target="50+">50+</h3>
-					<p>Team Members</p>
-				 </div>
-			  </div>
-		   </div>
+			</div>
+		  </div>
+		  <a class="carousel-control-prev" href="#homeCarousel" role="button" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#homeCarousel" role="button" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		  </a>
 		</div>
-	 </section>
+	  </div> 
+	  <!-- About Section -->
+	  <section class="ftco-section py-5">
+		<div class="container">
+		  <div class="row align-items-center">
+			<div class="col-md-6 mb-4 mb-md-0">
+			  <div class="img img-video d-flex align-items-center justify-content-center">
+				<img src="images/logo/NABL.png" alt="NABL Logo" class="img-fluid" style="max-width: 100%; height: auto;">
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="heading-section">
+				<span class="subheading" style="color: #01d28e;">Welcome to Pathocon Diagnostics</span>
+				<h2 class="mb-4">NABL, TGS Certified, ISO 9001:2015 Diagnostic Center</h2>
+				<p>Welcome to Pathocon Diagnostic Center, with over 24 years of expertise in providing comprehensive medical services. As an NABL, TGS Certified, and ISO 9001:2015 accredited facility, we are committed to offering accurate, reliable, and timely diagnostic solutions.</p>
+				<p>Our wide range of services includes general medicine, cardiology, diabetology, endocrinology, pulmonology, nephrology, urology, orthopedics, psychiatry, physiotherapy, hematology, biochemistry, microbiology, serology, histopathology, cytology, clinical pathology, hormones & immunoassays, and advanced diagnostic imaging.</p>
+				<p><strong>Specialized in AIDS Diagnostics and Care.</strong></p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	<section id="counter" class="counter-section py-5 mt-3">
+		<div class="container text-center">
+		  <h2 class="section-title text-white">Our Comprehensive Services</h2>
+		  <p class="mb-5" style="color: aliceblue;">At our diagnostic center, we offer a full spectrum of services to ensure your health and well-being:</p>
+		  <div class="row">
+			<!-- Counter 1 -->
+			<div class="col-lg-3 col-md-6 mb-4">
+			  <div class="counter-box">
+				<h3 class="counter" data-target="500">0</h3>
+				<p>Happy Clients</p>
+			  </div>
+			</div>
+			<!-- Counter 2 -->
+			<div class="col-lg-3 col-md-6 mb-4">
+			  <div class="counter-box">
+				<h3 class="counter" data-target="13000">0</h3>
+				<p>AIDS Tests Conducted</p>
+			  </div>
+			</div>
+			<!-- Counter 3 -->
+			<div class="col-lg-3 col-md-6 mb-4">
+			  <div class="counter-box">
+				<h3 class="counter" data-target="24">0</h3>
+				<p>Years of Experience</p>
+			  </div>
+			</div>
+			<!-- Counter 4 -->
+			<div class="col-lg-3 col-md-6 mb-4">
+			  <div class="counter-box">
+				<h3 class="counter" data-target="50">0</h3>
+				<p>Team Members</p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  
 <!--About section end-->
-	  <!-- <section class="ftco-appointment ftco-section ftco-no-pt ftco-no-pb">
-			<div class="overlay"></div>
-    	<div class="container">
-    		<div class="row d-md-flex justify-content-center">
-    			<div class="col-md-12">
-	    			<div class="wrap-appointment d-md-flex">
-		    			<div class="col-md-8 bg-primary p-5 heading-section heading-section-white">
-		    				<span class="subheading">Booking an Appointment</span>
-		    				<h2 class="mb-4">Free Consultation</h2>
-		    				<form action="#" class="appointment">
-		    					<div class="row justify-content-center">
-										<div class="col-md-6">
-											<div class="form-group">
-					              <input type="text" class="form-control" placeholder="Your Name">
-					            </div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-					              <input type="text" class="form-control" placeholder="Phone number">
-					            </div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-					    					<div class="form-field">
-			          					<div class="select-wrap">
-			                      <div class="icon"><span class="fa fa-chevron-down"></span></div>
-			                      <select name="" id="" class="form-control">
-			                      	<option value="">Select Services</option>
-			                        <option value="">Spinal Manupulation</option>
-			                        <option value="">Electrotherapy</option>
-			                        <option value="">Manual Lymphatic</option>
-			                        <option value="">Medical Acupuncture</option>
-			                        <option value="">Therapeutic Exercise</option>
-			                        <option value="">Joint Mobilization</option>
-			                      </select>
-			                    </div>
-					              </div>
-					    				</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-					    					<div class="form-field">
-			          					<div class="select-wrap">
-			                      <div class="icon"><span class="fa fa-chevron-down"></span></div>
-			                      <select name="" id="" class="form-control">
-			                      	<option value="">Select Chiropractor</option>
-			                        <option value="">John Doe</option>
-			                        <option value="">William Smith</option>
-			                        <option value="">Danny Green</option>
-			                        <option value="">Jason Thompson</option>
-			                      </select>
-			                    </div>
-					              </div>
-					    				</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-					    					<div class="input-wrap">
-					            		<div class="icon"><span class="fa fa-calendar"></span></div>
-					            		<input type="text" class="form-control appointment_date" placeholder="Date">
-				            		</div>
-					    				</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-					    					<div class="input-wrap">
-					            		<div class="icon"><span class="fa fa-clock-o"></span></div>
-					            		<input type="text" class="form-control appointment_time" placeholder="Time">
-				            		</div>
-					    				</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-					              <input type="submit" value="Send message" class="btn btn-secondary py-3 px-4">
-					            </div>
-										</div>
-		    					</div>
-			          </form>
-		    			</div>
-		    			<div class="col-md-4 bg-white text-center p-5">
-		    				<div class="desc border-bottom pb-4">
-		    					<h2>Business Hours</h2>
-			              <div class="opening-hours">
-			              	<h4>Opening Days:</h4>
-			              	<p class="pl-3">
-			              		<span><strong>Monday – Friday:</strong> 9am to 20 pm</span>
-			              		<span><strong>Saturday :</strong> 9am to 17 pm</span>
-			              	</p>
-			              	<h4>Vacations:</h4>
-			              	<p class="pl-3">
-			              		<span>All Sunday Days</span>
-			              		<span>All Official Holidays</span>
-			              	</p>
-			              </div>
-		    				</div>
-								<div class="desc pt-4 ">
-									<h3 class="heading">For Emergency Cases</h3>
-									<span class="phone">(+01) 123 456 7890</span>
-								</div>
-		    			</div>
-		    		</div>
-		    	</div>
-    		</div>
-    	</div>
-    </section> -->
-
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center pb-5 mb-2">
@@ -412,172 +349,6 @@
 		</div>
 	</section>
 	
-	
-
-    <!-- <section class="ftco-section testimony-section bg-dark">
-      <div class="container">
-        <div class="row justify-content-center pb-5 mb-3">
-          <div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
-          	<span class="subheading">Testimonies</span>
-            <h2>Happy Clients &amp; Feedbacks</h2>
-          </div>
-        </div>
-        <div class="row ftco-animate">
-          <div class="col-md-12">
-            <div class="carousel-testimony owl-carousel ftco-owl">
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>	 -->
-
-<!-- Counter Section Start -->
- <!-- Counter Section End -->
- 
-		<!-- <section class="ftco-section">
-      <div class="container">
-        <div class="row justify-content-center pb-5 mb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">News &amp; Blog</span>
-            <h2>Latest news from our blog</h2>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20 rounded" style="background-image: url('images/image_1.jpg');">
-              </a>
-              <div class="text mt-3">
-              	<div class="posted mb-3 d-flex">
-              		<div class="img author" style="background-image: url(images/person_2.jpg);"></div>
-              		<div class="desc pl-3">
-              			<span>Posted by John doe</span>
-              			<span>24 February 2020</span>
-              		</div>
-              	</div>
-                <h3 class="heading"><a href="#">What Every Athlete Needs To Know About Injury Recovery</a></h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20 rounded" style="background-image: url('images/image_2.jpg');">
-              </a>
-              <div class="text mt-3">
-              	<div class="posted mb-3 d-flex">
-              		<div class="img author" style="background-image: url(images/person_3.jpg);"></div>
-              		<div class="desc pl-3">
-              			<span>Posted by John doe</span>
-              			<span>24 February 2020</span>
-              		</div>
-              	</div>
-                <h3 class="heading"><a href="#">What Every Athlete Needs To Know About Injury Recovery</a></h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20 rounded" style="background-image: url('images/image_3.jpg');">
-              </a>
-              <div class="text mt-3">
-              	<div class="posted mb-3 d-flex">
-              		<div class="img author" style="background-image: url(images/person_1.jpg);"></div>
-              		<div class="desc pl-3">
-              			<span>Posted by John doe</span>
-              			<span>24 February 2020</span>
-              		</div>
-              	</div>
-                <h3 class="heading"><a href="#">What Every Athlete Needs To Know About Injury Recovery</a></h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-	<!-- <div class="fab" onclick="toggleMenu()" style="margin-right: 100px; margin-top: 50px;">
-		+
-	  </div>
-	
-	  <div class="fab-menu">
-		<div>Create Post</div>
-		<div>Create Event</div>
-		<div>Settings</div>
-	  </div> -->
 	  <section class="testimonials">
 		<h2>What Clients Say About Pathocon Diagnostics</h2>
 		<div class="testimonial-boxes">
@@ -732,6 +503,28 @@
       fab.classList.toggle('rotate');
     }
   </script>
+  <script>
+	// Counter animation
+	const counters = document.querySelectorAll('.counter');
+	const speed = 200; // Adjust speed for the animation
+  
+	counters.forEach(counter => {
+	  const updateCount = () => {
+		const target = +counter.getAttribute('data-target');
+		const count = +counter.innerText;
+		const increment = target / speed;
+  
+		if (count < target) {
+		  counter.innerText = Math.ceil(count + increment);
+		  setTimeout(updateCount, 10);
+		} else {
+		  counter.innerText = target.toLocaleString();
+		}
+	  };
+	  updateCount();
+	});
+  </script>
+  
   
   <button class="scroll-to-top" onclick="scrollToTop()" style="width: 50px; margin-bottom: 5px;">↑</button>
   </body>
